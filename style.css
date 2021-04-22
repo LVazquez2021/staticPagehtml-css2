@@ -1,0 +1,447 @@
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            /* ICONOS */
+            
+            .fa-users,
+            .fa-edit,
+            .fa-address-card,
+            .fa-telegram-plane {
+                color: #ff3366;
+            }
+            
+            .fa-arrow-right {
+                align-items: center;
+                font-size: 50px;
+                color: black;
+            }
+            
+            .fa-twitter-square,
+            .fa-facebook,
+            .fa-instagram-square,
+            .fa-youtube {
+                font-size: 40px;
+                margin-left: 20px;
+            }
+            
+            #contImg:link {
+                box-shadow: 5px 5px 5px #2323;
+                color: red;
+                text-decoration: none;
+            }
+            /* contenedor */
+            
+            .container {
+                background-color: white;
+                width: 100%;
+            }
+            
+            header {
+                height: 100px;
+            }
+            
+            .cabezal {
+                background-color: #149dcc;
+                position: sticky;
+                width: 100%;
+                top: 0px;
+                z-index: 1;
+            }
+            
+            .cabezal span img:hover {
+                box-sizing: border-box;
+                border: 3px dotted transparent;
+            }
+            /* menu de navegacion */
+            
+            .encabezado ul {
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                padding: 10px;
+            }
+            
+            .encabezado ul li {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .encabezado ul {
+                position: absolute;
+                top: 15px;
+                left: 340px;
+            }
+            
+            .encabezado ul li {
+                background-color: #ff3366;
+                border: 1px solid black;
+                border-radius: 50px;
+                font-size: 11px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                text-align: justify;
+                width: 120px;
+                height: 20px;
+                padding: 10px;
+                margin-right: 30px;
+            }
+            
+            .encabezado ul li:hover {
+                opacity: 1;
+                background-color: rgba(10, 20, 253, 0.9);
+                box-shadow: 5px 5px 5px #2323;
+                top: -5px;
+                left: -5px;
+            }
+            
+            span img {
+                width: 200px;
+                margin: 10px 0 0 40px;
+                padding: 5px;
+            }
+            
+            .iconos {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(127, 219, 253);
+                height: 60px;
+            }
+            
+            #contImg {
+                margin-top: 5px;
+            }
+            
+            .iconos img {
+                border: 1px solid black;
+                margin: 10px;
+                width: 50px;
+                height: 35px;
+                object-fit: fill;
+            }
+            
+            .newPage {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px;
+                background-color: #ff3366;
+                height: 80px;
+                font-family: sans-serif;
+                font-size: 15px;
+            }
+            
+            .newPage h1 {
+                position: relative;
+                top: 2px;
+                font-weight: bold;
+            }
+            
+            .newPage button {
+                font-family: sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                background-color: rgba(10, 20, 253, 0.9);
+                margin-right: 100px;
+                width: 200px;
+                height: 20px;
+                padding: 30px;
+                border-radius: 100px;
+                outline: none;
+                border: 0;
+            }
+            
+            .newPage button:hover {
+                opacity: 1;
+                background-color: #149dcc;
+                box-shadow: 5px 5px 5px #2323;
+                top: -5px;
+                left: -5px;
+            }
+            
+            .newPage button span {
+                position: relative;
+                top: -10px;
+            }
+            
+            .anuncios {
+                background-color: #cc2952;
+                height: 100px;
+                font-family: sans-serif;
+                font-size: 25px;
+            }
+            
+            .anuncios span {
+                position: relative;
+                top: 25px;
+                padding: 2px;
+                color: white;
+            }
+            /* seccion de contenedores de tarjetas de opciones */
+            
+            .cardContainer {
+                background-image: url(./img/cmedico.jpg);
+                display: flex;
+                align-items: center;
+                height: 500px;
+            }
+            
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #149dcc;
+                width: 345px;
+                height: 247px;
+                margin: 10px;
+            }
+            
+            .card button {
+                width: 250px;
+                height: 50px;
+                text-align: center;
+                background-color: rgb(127, 219, 253);
+                border-radius: 100px;
+                outline: none;
+            }
+            
+            .card button:hover {
+                opacity: 1;
+                background-color: #cc2952 !important;
+                box-shadow: 5px 5px 5px #2323;
+                top: -5px;
+                left: -5px;
+            }
+            
+            .card button span:hover {
+                color: #fff
+            }
+            
+            .card button span {
+                font-family: sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: #232323;
+                opacity: 0.6;
+                padding: 5px;
+            }
+            /* seccion de imagenes de ayuda */
+            
+            .helpImg {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .helpImg a {
+                margin: 30px 0;
+            }
+            
+            .helpImg img {
+                width: 500px;
+                height: 150px;
+            }
+            /* tarjetas de ultimas noticias */
+            
+            .cajaPadre {
+                display: flex;
+            }
+            
+            .box {
+                position: relative;
+                width: 350px;
+                height: 350px;
+                opacity: 0.8;
+                border: 1px solid black;
+                border-radius: 4px;
+                margin: 15px;
+            }
+            
+            .box img {
+                width: 305px;
+                height: 200px;
+            }
+            
+            .box:hover {
+                position: relative;
+                opacity: 1;
+                background-color: antiquewhite;
+                box-shadow: 5px 5px 5px #888;
+                top: -5px;
+                left: -5px;
+            }
+            
+            .box p {
+                text-align: center;
+                margin-top: 10px;
+            }
+            
+            .box h4 {
+                text-align: center;
+                margin-top: 10px;
+            }
+            /* footer */
+            
+            .primerNivel {
+                background-color: #232323;
+                color: #fff;
+                display: flex;
+                justify-content: flex-end;
+                justify-content: space-around;
+            }
+            /* codigo QR */
+            
+            .qrCode h4 {
+                text-align: center;
+            }
+            
+            .qrCode img {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .primerNivel h4 {
+                padding: 15px;
+            }
+            
+            .primerNivel ul {
+                padding: 15px 0;
+                list-style: none;
+            }
+            
+            .primerNivel a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            .segundoNivel {
+                background-color: #232323;
+                color: #fff;
+                padding: 25px;
+            }
+            /* ---------------------- */
+            /*  web responsive design */
+            
+            .respmenu a {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                padding: 10px 20px;
+                border-bottom: 2px solid #456789;
+                max-width: 200px;
+                background: #149dcc;
+                font-variant: small-caps;
+                text-shadow: 1px 1px black;
+            }
+            
+            .respmenu input[type="checkbox"],
+            .respmenu .fa-bars,
+            .respmenu .fa-times {
+                position: absolute;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                top: 28px;
+                right: 30px;
+                width: 48px;
+                height: 48px;
+            }
+            
+            .respmenu .fa-bars,
+            .respmenu .fa-times {
+                font-size: 48px;
+                pointer-events: none;
+            }
+            
+            .respmenu input[type="checkbox"] {
+                opacity: 0;
+            }
+            
+            .respmenu {
+                display: none;
+                color: #cc2952;
+                position: relative;
+                background: #149dcc;
+                min-height: 48px;
+            }
+            
+            .respmenu .navegacion {
+                position: absolute;
+                background: #149dcc;
+                top: 100px;
+                right: 0px;
+            }
+            
+            .respmenu .navegacion ul li {
+                list-style: none;
+            }
+            
+            .respmenu nav {
+                display: none;
+            }
+            
+            .respmenu input:checked~nav {
+                display: block;
+            }
+            
+            .respmenu input:checked~.fa-bars {
+                display: none;
+            }
+            
+            .respmenu input:not(:checked)~.fa-times {
+                display: none;
+            }
+            
+            @media screen and (max-width:900px) {
+                .encabezado {
+                    display: none;
+                }
+                .logo {
+                    display: none;
+                }
+                .contImg {
+                    margin-bottom: 10px;
+                }
+                .cardContainer {
+                    height: 100%;
+                    flex-wrap: wrap;
+                }
+                .helpImg {
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 70px;
+                }
+                .helpImg a img {
+                    width: 70%;
+                }
+                .newPage h1 {
+                    display: none;
+                }
+                .cajaPadre {
+                    flex-wrap: wrap;
+                }
+                .respmenu {
+                    display: block;
+                }
+                .colmed {
+                    margin-left: 100spx;
+                }
+            }
+            
+            @media screen and (max-width:671px) {
+                .helpImg a img {
+                    display: none;
+                }
+                .anuncios {
+                    display: none;
+                }
+                .primerNivel {
+                    flex-direction: column;
+                    width: 70%;
+                }
+                .segundoNivel {
+                    width: 337px;
+                }
+            }
